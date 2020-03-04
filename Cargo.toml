@@ -1,0 +1,13 @@
+[package]
+name = "openssh-authorizedkeyscommand-github"
+version = "0.0.1"
+authors = ["Hidenori Matsuki <dev@mazgi.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+surf = "1.0.3"
+serde = { version = "1.0", features = ["derive"] }
+async-std = "1.5.0"
+docopt = "1.1.0"
