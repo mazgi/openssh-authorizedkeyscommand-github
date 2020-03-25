@@ -26,9 +26,10 @@ Options:
 curl -L https://github.com/mazgi/openssh-authorizedkeyscommand-github/releases/download/v0.0.1/openssh-authorizedkeyscommand-github.x86_64-unknown-linux-gnu.tar.gz | sudo tar xz -C /usr/local/bin/
 ```
 
-2. Update `/etc/ssh/sshd_config`.
+2. Update `/etc/ssh/sshd_config` like below.
 
 ```ssh_config
+AuthorizedKeysCommandUser nobody
 AuthorizedKeysCommand /usr/local/bin/openssh-authorizedkeyscommand-github --user %u
 ```
 
